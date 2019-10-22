@@ -1,0 +1,19 @@
+{
+  "name": "react-native-a-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franreysaycon/react-native-a-tutorial.git"
+  },
+  "author": "Franrey Anthony S. Saycon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/franreysaycon/react-native-a-tutorial/issues"
+  },
+  "homepage": "https://github.com/franreysaycon/react-native-a-tutorial#readme"
+}
