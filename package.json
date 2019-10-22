@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "mdx-deck build main.mdx",
+    "deploy": "gh-pages -d public"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/franreysaycon/react-native-a-tutorial/issues"
   },
-  "homepage": "https://github.com/franreysaycon/react-native-a-tutorial#readme"
+  "homepage": "https://github.com/franreysaycon/react-native-a-tutorial#readme",
+  "devDependencies": {
+    "gh-pages": "^2.1.1",
+    "mdx-deck": "^3.0.13"
+  }
 }
