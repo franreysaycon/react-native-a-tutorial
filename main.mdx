@@ -8,7 +8,14 @@ import CSR from "./components/csr"
 import SSR from "./components/ssr"
 import { LiveCode } from "mdx-deck-live-code"
 import Editor from "./components/editor"
-import { HelloWorldCode }  from "./code"
+import { 
+    HelloWorldCode,
+    LibraryStyleCode,
+    SimpleEffectCode,
+    SimpleRefCode,
+    SimpleStateCode,
+    SimpleStyleCode,
+}  from "./code"
 
 
 export const theme = {
@@ -114,22 +121,34 @@ To understand it, it's imperative you know ReactJS.
 
 ---
 
-<Layout>
-
 <CSR />
-
-</Layout>
 
 ---
 
-<Layout>
-
 <SSR />
-
-</Layout>
 
 ---
 
 <Editor code={HelloWorldCode} />
 
 ---
+
+<Editor code={SimpleStyleCode} />
+
+---
+
+<Editor code={LibraryStyleCode} noInline={true} />
+
+--- 
+
+<Editor code={SimpleStateCode} />
+
+--- 
+
+<Editor code={SimpleEffectCode} />
+
+--- 
+
+<Editor code={SimpleRefCode} />
+
+--- 

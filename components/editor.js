@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import {
     LiveProvider,
     LiveEditor,
@@ -6,7 +6,8 @@ import {
 } from "react-live"
 import styled from "styled-components"
 
-const scope = { styled, useState }
+
+const scope = { styled, useState, useEffect, useRef }
 
 const Container = styled.div`
     display: grid;
@@ -28,14 +29,19 @@ const LeftContent = styled.div`
 `
 
 const RightContent = styled.div`
-    display: flex;
-    flex: 1;
-    flex-grow: 1;
+    display: block;
+    padding: 1em;
+    height: 100%;
     background-color: white;
+
+    & > div {
+        width: 100%;
+        height: 100%;
+    }
 `
 
-const Editor = ({code}) => (
-    <LiveProvider code={code} scope={scope}>
+const Editor = ({code, noInline}) => (
+    <LiveProvider code={code} scope={scope} noInline={noInline}>
         <Container>
             <LeftContent>
                 <LiveEditor />
