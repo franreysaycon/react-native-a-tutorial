@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "mdx-deck build main.mdx",
-    "deploy": "gh-pages -d public"
+    "deploy": "gh-pages -d public",
+    "start": "mdx-deck start main.mdx"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,8 @@
   },
   "homepage": "https://github.com/franreysaycon/react-native-a-tutorial#readme",
   "devDependencies": {
+    "@emotion/styled": "^10.0.17",
+    "emotion": "^10.0.17",
     "gh-pages": "^2.1.1",
     "mdx-deck": "^3.0.13"
   }

@@ -1,4 +1,6 @@
 import { condensed  } from '@mdx-deck/themes'
+import Layout from "./components/layout"
+import Credentials from "./components/credentials"
 
 export const theme = {
     ...condensed,
@@ -8,11 +10,22 @@ export const theme = {
     }
 }
 
+<Layout>
+
 # React Native: A Tutorial
+
+</Layout>
 
 ---
 
-# Page 2
+<Layout>
+    <h1>WHO AM I ?</h1>
+    <Credentials>
+        <h2>Franrey Saycon</h2>
+        <span>Head Director @ ReactJS Philippines</span>
+        <span>Software Engineer @ Phitopolis</span>
+    </Credentials>
+</Layout>
 
 ---
 
