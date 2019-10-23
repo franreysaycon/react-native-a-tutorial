@@ -1,6 +1,9 @@
 import { condensed  } from '@mdx-deck/themes'
 import Layout from "./components/layout"
 import Credentials from "./components/credentials"
+import Developer from "./components/developer"
+import Responsive from "./components/responsive"
+
 
 export const theme = {
     ...condensed,
@@ -29,4 +32,14 @@ export const theme = {
 
 ---
 
-# Page 3
+<Layout>
+    <Developer />
+</Layout>
+
+---
+
+<Layout>
+    <Responsive />
+</Layout>
+
+---
