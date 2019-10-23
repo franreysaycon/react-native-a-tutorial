@@ -1,8 +1,14 @@
-import { condensed  } from '@mdx-deck/themes'
+import { condensed } from '@mdx-deck/themes'
+import { Appear } from "mdx-deck"
 import Layout from "./components/layout"
 import Credentials from "./components/credentials"
 import Developer from "./components/developer"
 import Responsive from "./components/responsive"
+import CSR from "./components/csr"
+import SSR from "./components/ssr"
+import { LiveCode } from "mdx-deck-live-code"
+import Editor from "./components/editor"
+import { HelloWorldCode }  from "./code"
 
 
 export const theme = {
@@ -41,5 +47,89 @@ export const theme = {
 <Layout>
     <Responsive />
 </Layout>
+
+---
+
+<Layout>
+
+# Three Options You Could Take
+<ul>
+    <Appear>
+        <li>Hire 2-3 other developers</li>
+        <li>Learn all the necessary tech on your own</li>
+        <li>Refuse (joke 1/2)</li>
+    </Appear>
+</ul>
+
+</Layout>
+
+---
+
+<Layout>
+
+If only you can use the same set of tech for all platforms,
+
+</Layout>
+
+---
+
+<Layout>
+
+You guessed it. **React Native** to the rescue!
+
+</Layout>
+
+---
+
+<Layout>
+
+# React Native is just ReactJS
+To understand it, it's imperative you know ReactJS.
+
+</Layout>
+
+---
+
+<Layout>
+
+# ReactJS 101 : Crash Course
+
+</Layout>
+
+---
+
+<Layout>
+
+## ReactJS basically...
+<ul>
+    <Appear>
+        <li>builds simple/complex user interfaces</li>
+        <li>is a purely light-weight view <u>library</u></li>
+        <li>enables stateful UI's</li>
+        <li>updates view automatically every data change*</li>
+    </Appear>
+</ul>
+
+</Layout>
+
+---
+
+<Layout>
+
+<CSR />
+
+</Layout>
+
+---
+
+<Layout>
+
+<SSR />
+
+</Layout>
+
+---
+
+<Editor code={HelloWorldCode} />
 
 ---

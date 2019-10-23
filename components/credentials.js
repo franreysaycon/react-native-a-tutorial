@@ -10,7 +10,7 @@ const Container = styled.div`
     flex-direction: column;
 
     & > h2 {
-        margin: 0;
+        margin: 0.5em;
     }
 
     & > span {
