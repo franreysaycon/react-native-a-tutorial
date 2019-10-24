@@ -1,6 +1,8 @@
 export { default as HelloWorldCode } from "./hello-world"
 export { default as LibraryStyleCode } from "./library-style"
 export { default as SimpleEffectCode } from "./simple-effect"
+export { default as SimpleIfElseCode } from "./simple-if-else"
+export { default as SimplePropsCode } from "./simple-props"
 export { default as SimpleRefCode } from "./simple-ref"
 export { default as SimpleStateCode } from "./simple-state"
 export { default as SimpleStyleCode } from "./simple-style"
