@@ -1,5 +1,5 @@
 const code = `
-    function SimpleState(){
+    function SimpleEffect(){
         // useEffect is another React hook
         // Given the changes of a tracked state, 
         // trigger such effect each time
